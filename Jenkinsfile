@@ -2,11 +2,14 @@ pipeline{
 	agent any
 stages{
 	stage('checkout'){
-		echo "checking file"}
+		steps{
+		echo "checking file"}}
 	stages('build'){
-		echo "building file"}
+		steps{
+		echo "building file"}}
 	stages('packaging'){
-		echo "packing file"}
+		steps{
+		echo "packing file"}}
 	post{
 		success{
 			echo "success"}
