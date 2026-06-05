@@ -19,11 +19,5 @@ stages{
 	stage('build'){
 		steps{
 		echo "building file"}}
-		post{
-			success{
-				echo "success"}
-			failure{
-				echo "failed"}
-}
 }
 }
